@@ -3,9 +3,13 @@
 
 #include "AwesomeCPP.h"
 
+using std::cout;
+using std::cin;
 
 int main()
 {
+#pragma region Variables
+
 	auto a = 5;
 	auto str = "Hello";
 	auto b = 5.5;
@@ -24,26 +28,83 @@ int main()
 	auto o = 0x5'5;
 	auto p = 0x5'5'5;
 
-	std::cout << "Hello" << '\n';
-	std::cout << 99 << '\n';
-	std::cout << a << '\n';
-	std::cout << "Type of a: " << typeid(a).name() << '\n';
-	std::cout << "Type of str: " << typeid(str).name() << '\n';
-	std::cout << "Type of b: " << typeid(b).name() << '\n';
-	std::cout << "Type of c: " << typeid(c).name() << '\n';
-	std::cout << "Type of d: " << typeid(d).name() << '\n';
-	std::cout << "Type of e: " << typeid(e).name() << '\n';
-	std::cout << "Type of f: " << typeid(f).name() << '\n';
-	std::cout << "Type of g: " << typeid(g).name() << '\n';
-	std::cout << "Type of h: " << typeid(h).name() << '\n';
-	std::cout << "Type of i: " << typeid(i).name() << '\n';
-	std::cout << "Type of j: " << typeid(j).name() << '\n';
-	std::cout << "Type of k: " << typeid(k).name() << '\n';
-	std::cout << "Type of l: " << typeid(l).name() << '\n';
-	std::cout << "Type of m: " << typeid(m).name() << '\n';
-	std::cout << "Type of n: " << typeid(n).name() << '\n';
-	std::cout << "Type of o: " << typeid(o).name() << '\n';
-	std::cout << "Type of p: " << typeid(p).name() << '\n';
+	cout << "Hello" << '\n';
+	cout << 99 << '\n';
+	cout << a << '\n';
+	cout << "Type of a: " << typeid(a).name() << '\n';
+	cout << "Type of str: " << typeid(str).name() << '\n';
+	cout << "Type of b: " << typeid(b).name() << '\n';
+	cout << "Type of c: " << typeid(c).name() << '\n';
+	cout << "Type of d: " << typeid(d).name() << '\n';
+	cout << "Type of e: " << typeid(e).name() << '\n';
+	cout << "Type of f: " << typeid(f).name() << '\n';
+	cout << "Type of g: " << typeid(g).name() << '\n';
+	cout << "Type of h: " << typeid(h).name() << '\n';
+	cout << "Type of i: " << typeid(i).name() << '\n';
+	cout << "Type of j: " << typeid(j).name() << '\n';
+	cout << "Type of k: " << typeid(k).name() << '\n';
+	cout << "Type of l: " << typeid(l).name() << '\n';
+	cout << "Type of m: " << typeid(m).name() << '\n';
+	cout << "Type of n: " << typeid(n).name() << '\n';
+	cout << "Type of o: " << typeid(o).name() << '\n';
+	cout << "Type of p: " << typeid(p).name() << '\n';
+
+#pragma endregion
+
+#pragma region Flow of Control
+
+	cout << "Enter a number:";
+	int input;
+	cin >> input;
+
+	if (input%2 == 0)
+	{
+		cout << "You entered a even number" << '\n';
+	}
+	else
+	{
+		cout << "You entered a odd number" << '\n';
+	}
+
+	cout << "Enter a number from 1 to 7:";
+	int inputWeekDay;
+	cin >> inputWeekDay;
+
+	switch (inputWeekDay)
+	{
+		case 1:
+			cout << "Monday" << '\n';
+			break;
+
+		case 2:
+			cout << "Tuesday" << '\n';
+			break;
+
+		case 3:
+			cout << "Wednesday" << '\n';
+			break;
+
+		case 4:
+			cout << "Thursday" << '\n';
+			break;
+
+		case 5:
+			cout << "Friday" << '\n';
+			break;
+
+		case 6:
+			cout << "Saturday" << '\n';
+			break;
+
+		case 7:
+			cout << "Sunday" << '\n';
+			break;
+
+		default:
+			cout << "Invalid input" << '\n';
+			break;
+	}
+#pragma endregion
 
 	return 0;
 }
