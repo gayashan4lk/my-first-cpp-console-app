@@ -10,6 +10,9 @@ using std::cin;
 #include <string>
 using std::string;
 
+#include <vector>
+using std::vector;
+
 int subtract(int a, int b);
 int subtract(int a, int b, int c);
 double subtract(double a, double b);

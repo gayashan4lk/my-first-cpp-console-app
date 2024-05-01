@@ -119,16 +119,28 @@ int main()
 //
 //#pragma endregion
 
-#pragma region Strings
+//#pragma region Strings
+//
+//	string greeting = "Hello";
+//	int length = greeting.length();
+//	string partOfGreetings = greeting.substr(0, 3);
+//
+//	cout << "Length of greeting: " << length << '\n';
+//	cout << "Part of greeting: " << partOfGreetings << '\n';
+//
+//#pragma endregion
 
-	string greeting = "Hello";
-	int length = greeting.length();
-	string partOfGreetings = greeting.substr(0, 3);
-
-	cout << "Length of greeting: " << length << '\n';
-	cout << "Part of greeting: " << partOfGreetings << '\n';
-
-#pragma endregion
+//#pragma region Collections
+//
+//	vector<int> numbers = { 0, 1, 2, 3, 4 };
+//	numbers.push_back(5);
+//
+//	for (auto number : numbers)
+//	{
+//		cout << number << '\n';
+//	}
+//
+//#pragma endregion
 
 	return 0;
 }
