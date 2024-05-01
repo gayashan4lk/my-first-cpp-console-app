@@ -3,13 +3,6 @@
 
 #include "AwesomeCPP.h"
 
-using std::cout;
-using std::cin;
-
-int subtract(int a, int b);
-int subtract(int a, int b, int c);
-double subtract(double a, double b);
-
 int main()
 {
 
@@ -111,18 +104,29 @@ int main()
 //	}
 //#pragma endregion
 
-#pragma region Functions
+//#pragma region Functions
+//
+//	auto add = [](int a, int b) -> int
+//		{
+//		return a + b;
+//	};
+//
+//	auto result = add(5, 6);
+//	cout << "Result of add function: " << result << '\n';
+//	cout << "Result of subtract function: " << subtract(5, 6) << '\n';
+//	cout << "Result of subtract function: " << subtract(5, 6, 7) << '\n';
+//	cout << "Result of subtract function: " << subtract(6.2, 9.9) << '\n';
+//
+//#pragma endregion
 
-	auto add = [](int a, int b) -> int
-		{
-		return a + b;
-	};
+#pragma region Strings
 
-	auto result = add(5, 6);
-	cout << "Result of add function: " << result << '\n';
-	cout << "Result of subtract function: " << subtract(5, 6) << '\n';
-	cout << "Result of subtract function: " << subtract(5, 6, 7) << '\n';
-	cout << "Result of subtract function: " << subtract(6.2, 9.9) << '\n';
+	string greeting = "Hello";
+	int length = greeting.length();
+	string partOfGreetings = greeting.substr(0, 3);
+
+	cout << "Length of greeting: " << length << '\n';
+	cout << "Part of greeting: " << partOfGreetings << '\n';
 
 #pragma endregion
 
